@@ -1,4 +1,4 @@
-string[] ArrayFirst = new string[6] { "553", "2", "one", "35", "Hi", "333" };
+string[] ArrayFirst = new string[6] { "3", "2", "one", "35", "Hi", "333" };
 string[] ArrayLength = new string[ArrayFirst.Length];
 void ArraySolution(string[] ArrayFirst, string[] ArrayLength)
 
