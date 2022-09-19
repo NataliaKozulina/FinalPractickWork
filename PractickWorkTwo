@@ -1,0 +1,25 @@
+string[] ArrayFirst = new string[6] { "553", "2", "one", "35", "Hi", "333" };
+string[] ArrayLength = new string[ArrayFirst.Length];
+void ArraySolution(string[] ArrayFirst, string[] ArrayLength)
+
+{
+    int count = 0;
+    for (int i = 0; i < ArrayFirst.Length; i++)
+    {
+        if (ArrayFirst[i].Length <= 3)
+        {
+            ArrayLength[count] = ArrayFirst[i];
+            count++;
+        }
+    }
+}
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+ArraySolution(ArrayFirst, ArrayLength);
+PrintArray(ArrayLength);
